@@ -24,9 +24,4 @@
     <ProjectReference Include="..\ProdutosApp.Domain\ProdutosApp.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Contexts\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>

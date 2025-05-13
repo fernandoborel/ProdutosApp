@@ -7,7 +7,7 @@ public interface IBaseRepository<TEntity, Tkey> where TEntity : class
 {
     Task AddAsync(TEntity obj);
     Task UpdateAsync(TEntity obj);
-    Task DeleteAsync(Tkey obj);
+    Task DeleteAsync(TEntity obj);
 
     Task<List<TEntity>> GetAllAsync();
     Task<TEntity?> GetByIdAsync(Tkey id);

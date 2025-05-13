@@ -8,8 +8,18 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Scalar.AspNetCore" Version="2.2.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProdutosApp.Application\ProdutosApp.Application.csproj" />
+    <ProjectReference Include="..\ProdutosApp.Domain\ProdutosApp.Domain.csproj" />
+    <ProjectReference Include="..\ProdutosApp.Infra.Data\ProdutosApp.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
