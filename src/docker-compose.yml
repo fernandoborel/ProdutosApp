@@ -6,7 +6,7 @@ services:
       - "1434:1433"
     environment:
       - ACCEPT_EULA="Y"
-      - SA_PASSWORD="Coti@2025"
+      - SA_PASSWORD=Coti@2025
     restart: unless-stopped
     networks:
       - coti_network
