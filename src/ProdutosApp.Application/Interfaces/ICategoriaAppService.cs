@@ -1,4 +1,4 @@
-﻿using ProdutosApp.Application.Dtos;
+﻿using ProdutosApp.Application.Dtos.Responses;
 
 namespace ProdutosApp.Application.Interfaces;
 

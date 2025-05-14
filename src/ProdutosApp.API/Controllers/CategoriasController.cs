@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ProdutosApp.Application.Dtos;
+using ProdutosApp.Application.Dtos.Responses;
 using ProdutosApp.Application.Interfaces;
 
 namespace ProdutosApp.API.Controllers;

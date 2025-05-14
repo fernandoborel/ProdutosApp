@@ -4,9 +4,9 @@ public class Categoria
 {
     #region Propriedades
 
-    public Guid? Id { get; set; }
-    public string? Nome { get; set; }
-    public bool? Ativo { get; set; }
+    public Guid Id { get; set; }
+    public string Nome { get; set; }
+    public bool Ativo { get; set; }
 
     #endregion
 
