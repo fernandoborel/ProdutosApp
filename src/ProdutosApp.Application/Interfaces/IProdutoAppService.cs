@@ -9,12 +9,8 @@ namespace ProdutosApp.Application.Interfaces;
 public interface IProdutoAppService
 {
     Task<ProdutoResponse> Adicionar(ProdutoRequest request);
-
     Task<ProdutoResponse> Atualizar(Guid id, ProdutoRequest request);
-
     Task<ProdutoResponse> Excluir(Guid id);
-
     Task<List<ProdutoResponse>> ObterTodos();
-
     Task<ProdutoResponse> ObterPorId(Guid id);
 }
