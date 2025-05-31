@@ -6,7 +6,5 @@ namespace ProdutosApp.Infra.Data.Repositories;
 
 public class CategoriaRepository : BaseRepository<Categoria, Guid>, ICategoriaRepository
 {
-    public CategoriaRepository(DataContext dataContext) : base(dataContext)
-    {
-    }
+    public CategoriaRepository(DataContext dataContext) : base(dataContext){ }
 }
