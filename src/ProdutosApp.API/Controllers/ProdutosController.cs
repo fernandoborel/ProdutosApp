@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProdutosApp.Application.Dtos.Requests;
 using ProdutosApp.Application.Dtos.Responses;
 using ProdutosApp.Application.Interfaces;
 
 namespace ProdutosApp.API.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class ProdutosController(IProdutoAppService produtoAppService) : ControllerBase
