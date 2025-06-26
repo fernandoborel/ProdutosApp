@@ -16,6 +16,9 @@ builder.Services.AddAplicationServices();
 builder.Services.AddDomainServices();
 builder.Services.AddEntityFramework(builder.Configuration);
 
+//Politica de autenticação
+builder.Services.AddJwtBearerConfig(builder.Configuration);
+
 //Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -46,8 +49,7 @@ app.MapScalarApiReference(options =>
     options.WithTheme(ScalarTheme.BluePlanet);
 });
 
+app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

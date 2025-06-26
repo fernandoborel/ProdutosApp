@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProdutosApp.Application.Dtos.Responses;
 using ProdutosApp.Application.Interfaces;
 
 namespace ProdutosApp.API.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class CategoriasController(ICategoriaAppService _categoriaAppService) : ControllerBase
